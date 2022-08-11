@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "deneb": {
+      "build": "1.3.0.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "5.2.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": true,
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "information": {
+      "name": "Stacked Bar Chart Sorted",
+      "description": "[No Description Provided]",
+      "author": "Chris Calvert",
+      "uuid": "efd7ba93-f8f7-4ac0-89a7-00c079b453c5",
+      "generated": "2022-08-11T00:25:26.429Z",
+      "previewImageBase64PNG": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABRCAYAAAAw7F/uAAAAAXNSR0IArs4c6QAAC0NJREFUeF7tXX1QlMcZf3bfO++OAxT8QjQHUj78AExjGqMSPHCcJp02Ru1JUVC+RmnSmTZNRG3TzmWmTVprJm1to52MDBG1nTmtRqKOSQUkmjZGY4YEqykq8RtCQD5EhPfe7SxKxiQct7sc533s/nUz9zzv7v729z777LPP7otAFonAMCCAOJ45FwAMjPINAHCeUVaK+SkCRdnZ4zWTPk5VVSPGmCg9WpdmwCpCI/7HSqwRAHCbo/9/BoCfcshLUT9FYO7vZ2REn0g8Nspkiu3FuKmsrOwG7Yoklp8OqC80O/2V5Ac0TakIaxq9JKp50lRNU9vfeGNnjTeIFQ8AkYwgtAHAWUZZKeYjCFRW1izZvHlThVmvn6YAtG7dufMzbxDrNABMZcSgBQBGM8pKMR9AoKrqeBTB3WXXr1xe+faBA7MVhOq3lpd/4g1iUQuUyIhBD8figPGRUswLCBTbbLZSb/tYklheGNn7WEUEALxqsViezUxPn4Uxbivdtu3f0mLdxxEJ9KqHe1UoLVagM8hF/3yRWAoA0LgZSyEA0M0iKGW8i4AvEms9ALzEAUM4AHRwyEtRLyDgi8RaBwAvc/RdEosDLG+JSmJ5C+kgq0cSK8gG3FvdlcTyFtJBVs+XxMrLyzMqijpJ05wW5IRbToTDQIWb4ZGRJxoaGpSKioqbrNhgjP9y+PDhZzMyMuiWTgKjXk9VVZV5wYIFJaqq/pZRB1JSUiKvXbs2rqWl5ResOhERES/v2rWrnlVeyn0VgYyMDNUdJgNaLLvVqrNXV9+rLJo2IxLHEnHekwHgPXedvef/NAA4xiEvRTkRYJoKt2/fnrJly99ojhVTGTc+6sY/dzsW3c1W4N0rlMRiQtm3hZiIVVVVNYUg5b/MXUFwJHNeuvXnz6852nu7FzPpYYBNf/rjHACQxGICzLeFhpVYldU1nwPAGEYInJnWdJ0kFiNaPi4mieXjA+SvzZPE8teR8/F2+xyxdu3es9+pqjNZcUNIyVq6dDFNEpSrQlbQvCDnc8Sqqq7ZQwCeYu07cZK58+fPo1kOIsRKZ63n7gq3kUM+qEWDmVgfAwA9wMFaaMbFL1mFg10uIIi1c+eOtLfe2reYdTCfeOJ7e8vKSl+TxGJFjF8uIIhFMMzGCG1k7r6mrc3MtG4RJNa/AGAaY111ALCAUTagxCSx2IezfyqkCwU9o1rQHmlD8fHxY7GmxUZbLKeqv7o/+CV2opF3kQCpiPPuZYslicXwVqHY2NhRVM5sNnfV1dVR0L5RJLH6IBmKxTIDQAjDePSL0B0Lvy4oKSkpDPX2ToiyWM5LizXoWA6FWK8CwM84mGLy90MiKCYmZoLRaJyo0+lqpcXyGWKFAgBz/hsHYb0mimbOnBnSeaN5lsE88nhtbe2AnQnEqXDdupKtx48fv8aKtE6ne0VVVXqCSMTH4rVYlFipnEHfyQBA7yXziUJ9LKMB42Qnxh/X19cPeAdWIBILQDkCmPyHYxT2ZVrTF3qRWI8AQCVH+x4GAJqx+wcOnQoAOMQhzyyK4uLiRuoRmnmjs/P9xsbGoLFYAUoseosiDXGwFrqTQH3HkRwhlF6W+B9KTEycCAAzOjs7q69evdoVLKtCUWLt3rPvC9ZRo3JLFj1Jr2YSmQpFLJYoseheK2v5BwBkuxOmU2GUEeOxisl0Npicd1FiVVbXcPlYmdb04CQWnQp1OvykXm/YU1dX1yktlst3sc/HEiFWzoqVb37e2EhPbDOVRYtsa4qLC8MEfCzfsVjR0dEhJpMpzmg0fiot1qDjLkysqup3KwmQDCZWUSENJ9edrl3d2tJCTxMxFYPJtHvtmufoxrqIj+X5qTA+Pn4SQmhMeHh43cmTJ6lj9o0iV4V9kHiVWIC1LAD4FROrKBcJKf779m2HS0tL32fVCQ8P39zW1vYCAHieWCyNkMTyD2IhDS4gBXGED1B5pvWxFcNKLJvNNsJoNI7S6dTkr5+EzsrKiu9Rtb5LS5kKghqkOecTpNAAJPMpHUScRsDKLkKAxouYiqZq6ViHHwWADUwK9A5yQtZrGtQgBTEfWkWAKoCoiwlS6MqZObsBEed4QLp3CBAra/s0FWYghSxFCDEnFhKAp8GpNSAFH2CtBwHefqtL98zp0+8xZ9+GhoWqxatXPeiuDqaT0KIWK3Pjd5oBgdFdI/r/r3zug1BvZTd4c1Uo4mOJTIUiFutmh6nYHNbFvH2EAC5kWNPj3I0pUz5W3utZj567cWa/u4f1/48An6lZc2pu2oZUrnOFR0tqdZJYd5z3oCDW7I0pUxQNsZ+EBjhytKTWKkKsvW+/eQxjhfWbPfBJ08nXH5lgDeXNIJUWi5oBVH5fLZY3iZW2YcYeAMJ8Sgdr2txfz/ord2qyJJYk1qAzMCXWwrgVa26TbnrnOFMxIEPbt8fMeUlkE1okQCp9LBfD4usWS0PKbECE+TAFArL2xYdfE8pukMTyoPMuiRW4cSzpY7mwpnQqFLFYj8fYmhNGTi1imjvvCi193DZHWixpsVxyhk6FBKEjQIA50Q8B7Hu3pHbh7kN7+74Vw1qWfPep2dLHCiIfS5RYaRtSudJmjpbUjt73zv4PWYlI5U41nXjxsYkZ9GIUrr1CvwuQBqKP5U1ipW1IpSnGzNkNREPJxanPrx+pi5zCSsgrXRePJYZN28+7Vyh9LA/7WL5OLKxAFiGE2WIRhIq/b/lh5BfdTT9gJSNg1KvXohYviEm7xKwDpDHTOo8e3Bi0MG3pSIvV9/HsPh9LZCoUsVgixCIELmAg7NkNCMpv3dQXm0J6mfcKAeDC0ZJaz+wVSmJJYt1jniSxXNnqoawKpcWSFmtYwg2SWJJYkljuPWzpY7nCSDTyHoirQum8D8wSJ030E0mbEdnSkcSi6VhyVejSqEuLdQcaGseSFktarEG9Hxp5l3GsgSESTk2WUyGAJJbr904S6w42LXQTWkbeZXbDICEKuaVzFxwZeZeRd7c7xTKOJeNYg5PEr1aF+Tk5D4VGRNR9mvRhvLsg7tf/Xzf9N2d/V/dCEo+eiA7P84cqK9I+EZ2htpNHf4wWe6kZNzzAo3PoJ8foFzcGLUxpM66ekLd8eYoT4/Pl5eU8aReQl5c9BcDQUFZW1u2ugf3/F2Vnp97W6c7x1JWfmz0vVMOnNu3Y0c5az4+XLYsbn5h40W63u/1Se/8zC5ctSw9B6COeeqhuUU6O9TZCH/D0qSA3N62ju/ukw+G4xdyngoK45o6Oyw6HY8B7/Ad6TlHRitS2tltneHTufc6QiPW0zRY6bvr0LrvdrrF2ksqJ6AWajigO+Tbb2Jjp01t5iO8tHY8Ra9Wqld9qbe1qcDgcTh5iiegFmg7FKxD71M+DIVmswsLCyPb29k5ec1mcmzuuW1HaeabC/Pz8sdevX28/ePDggFeGD0Ts7OzsMQaDoZOnHhEdkbbR9org4Ms6HrNYhTk58U6d7jLPwPW9qbm5lkvNzY08JBHRKcrNnXylufkqTz0FOTlJmk73GU+fipYvn9TW09PE+4KJ4Lc6Ly/hYmPjRZ4+iVjGgoIfRVssU67zujkesVj5ubmzOru7a3kcSVqxiF6g6QQiDh6zWPk5WQ8Rnek0z9vdB6iAXqDpBCIOHiPWMysWjR57sbXN7uI7h64cehG9QNOh2ARinzwyFdrtdmy32+mNuzy37oKInjd1HA5HiKIopP+jVampqeb+3/TbQ2azWXM6nWFRUVFt9FN8Im2jAyCi58s6HrNYPCEGf5JNSEh4ECE1DGNF7enRQvSYRKoq6VBGYLW3l/To9frThPRMQkiZjDHGqko+qq+vP+dPfRzutg4p3DDcjZPP918E/g8hShQ5VBL6nAAAAABJRU5ErkJggg=="
+    },
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Semester",
+        "description": "",
+        "type": "text",
+        "kind": "column"
+      },
+      {
+        "key": "__1__",
+        "name": "Academic Year",
+        "description": "",
+        "type": "text",
+        "kind": "column"
+      },
+      {
+        "key": "__2__",
+        "name": "Traditional CH",
+        "description": "",
+        "type": "numeric",
+        "kind": "measure"
+      }
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "font": "Segoe UI",
+    "arc": {},
+    "area": {
+      "line": true,
+      "opacity": 0.6
+    },
+    "bar": {},
+    "line": {
+      "strokeWidth": 3,
+      "strokeCap": "round",
+      "strokeJoin": "round"
+    },
+    "path": {},
+    "point": {
+      "filled": true,
+      "size": 75
+    },
+    "rect": {},
+    "shape": {},
+    "symbol": {
+      "strokeWidth": 1.5,
+      "size": 50
+    },
+    "text": {
+      "font": "Segoe UI",
+      "fontSize": 12,
+      "fill": "#605E5C"
+    },
+    "axis": {
+      "ticks": false,
+      "grid": false,
+      "domain": false,
+      "labelColor": "#605E5C",
+      "labelFontSize": 12,
+      "titleFont": "Segoe UI",
+      "titleColor": "#252423",
+      "titleFontSize": 16,
+      "titleFontWeight": "normal"
+    },
+    "axisQuantitative": {
+      "tickCount": 3,
+      "grid": true,
+      "gridColor": "#C8C6C4",
+      "gridDash": [1, 5],
+      "labelFlush": false
+    },
+    "axisX": {"labelPadding": 5},
+    "axisY": {"labelPadding": 10},
+    "header": {
+      "titleFont": "Segoe UI",
+      "titleFontSize": 16,
+      "titleColor": "#252423",
+      "labelFont": "Segoe UI",
+      "labelFontSize": 13.333333333333332,
+      "labelColor": "#605E5C"
+    },
+    "legend": {
+      "titleFont": "Segoe UI",
+      "titleFontWeight": "bold",
+      "titleColor": "#605E5C",
+      "labelFont": "Segoe UI",
+      "labelFontSize": 13.333333333333332,
+      "labelColor": "#605E5C",
+      "symbolType": "circle",
+      "symbolSize": 75
+    }
+  },
+  "data": {"name": "dataset"},
+  "transform": [
+    {
+      "calculate": "indexof(['FA', 'SP', 'SU'], datum['__0__'])",
+      "as": "order"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusTopLeft": 5,
+    "cornerRadiusTopRight": 5
+  },
+  "encoding": {
+    "x": {
+      "field": "__1__",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "__2__",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "__0__",
+      "scale": {
+        "domain": ["FA", "SP", "SU"],
+        "range": [
+          "#3C8A2E",
+          "#BEC0C2",
+          "#000000"
+        ]
+      }
+    },
+    "order": {
+      "field": "order",
+      "type": "ordinal"
+    }
+  }
+}
